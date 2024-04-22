@@ -7,7 +7,7 @@ export default function ShoppingCart({ cart, removeFromCart, checkout }) {
         <ul>
           {cart.map((flower) => (
             <li key={flower.id}>
-              {flower.name} - ${flower.price}{' '}
+              {flower.name} - Rs.{flower.price}{' '}
               <button onClick={() => removeFromCart(flower)}>Remove</button>
             </li>
           ))}
