@@ -29,7 +29,6 @@ const FlowerMarketplace = () => {
   const [cart, setCart] = useState([]);
   const [addedFlowerIds, setAddedFlowerIds] = useState([]);
 
-  // const web3 = new Web3('https://sepolia.infura.io/v3/12c141ce9c4a43789a8af8d20cb26e78');
   const web3 = new Web3(window.ethereum)
   const [currentAddress, setCurrentAddress] = useState('');
   const [isConnect, setConnected] = useState(0);
